@@ -1,8 +1,8 @@
 
-# Minikube Setup and Kubernetes Operations on Ubuntu
+# Minikube Setup and Kubernetes Operations on Mac
 
 ## Introduction
-This document outlines the steps and commands for setting up Minikube on Ubuntu and troubleshooting common issues related to Kubernetes node, pods, and SSH access.
+This document outlines the steps and commands for setting up Minikube on Mac and troubleshooting common issues related to Kubernetes node, pods, and SSH access.
 
 ## Minikube Setup
 
@@ -76,7 +76,7 @@ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
 ```
 To resolve this issue, remove the conflicting key:
 ```bash
-ssh-keygen -f '/home/ub-karar/.ssh/known_hosts' -R '192.168.59.100'
+ssh-keygen -f '/home/{directoryname}/.ssh/known_hosts' -R '192.168.59.100'
 ```
 
 ### SSH with Correct Key
