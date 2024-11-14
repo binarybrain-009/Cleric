@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from dotenv import load_dotenv
 from openai import OpenAI
+from typing import List, Dict  # Add any other types you might need
 import subprocess
 import time
 import json
@@ -23,7 +24,7 @@ if not api_key:
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 class Commands_(BaseModel):
-    terminal_commands: list[str]
+    terminal_commands: List[str]
 
 
 def get_k8s_command(query):
