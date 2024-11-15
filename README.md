@@ -56,4 +56,4 @@
 }
 ```
 
-![Result Image](result.png)
+![Result Image](Result.png)
