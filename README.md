@@ -55,3 +55,5 @@
     "answer": "There are 5 pods in the default namespace."
 }
 ```
+
+![Result Image](result.png)
